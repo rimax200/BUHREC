@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUHREC - Babcock University Hospital</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme4.css">
+</head>
+<body>
+    <div class="form-body">
+        <div class="website-logo">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="logo-size" src="images/logo-1.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <img src="images/graphic1.svg" alt="">
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Welcome to BUHREC</h3>
+                        <p>Please Login to continue, if you don't have an account, Register in the link below</p>
+                        <div class="page-links">
+                            <a href="login.html" class="active">Login</a><a href="register.html">Register</a>
+                        </div>
+                        <form method="post" name="form" onsubmit="return validated()" action="../maintenance.html">
+                            <div class="alert alert-warning alert-dismissible fade show with-icon" id="email_error">
+                            Please fill in the correct email
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                            <input class="form-control" type="text" name="email" placeholder="E-mail Address" required>
+                            <div class="alert alert-warning alert-dismissible fade show with-icon" id="pass_error">
+                                Please fill in the correct password
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <input class="form-control" type="password" name="password" placeholder="Password" required>
+                            <div class="form-button">
+                                <button id="submit" type="submit" class="ibtn" onclick="">Login</button> <a href="forget4.html">Forget password?</a>
+                            </div>
+                        </form>
+                        <div class="other-links">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="valid.js"></script>
+</body>
+</html>
